@@ -44,7 +44,7 @@ return {
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       { "j-hui/fidget.nvim", tag = "legacy", opts = {} },
-      -- dditional lua configuration, makes nvim stuff amazing!
+      -- Additional lua configuration, lua typings
       "folke/neodev.nvim",
 
       -- Formatting
@@ -143,8 +143,8 @@ return {
         sources = {
           { name = "nvim_lsp" },
           { name = "luasnip" }, -- snippets
-          -- { name = "buffer" },  -- text within current buffer
           { name = "path" },    -- file system paths
+          { name = "emoji" },   -- emojis
           { name = "crates" },  -- rust crates
         },
         preselect = "item",

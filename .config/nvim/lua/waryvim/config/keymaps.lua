@@ -17,3 +17,6 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- vim.keymap.set("n", "k", "kzzzv")
 -- vim.keymap.set("n", "K", "Kzzzv")
+
+vim.keymap.set("n", "<leader>bd", ":%bd|e#<CR>",
+  { desc = "[d]elete all [b]uffers and reopen the last one", silent = true })
